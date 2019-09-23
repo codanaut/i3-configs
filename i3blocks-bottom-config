@@ -1,0 +1,68 @@
+# i3blocks config file
+#
+# Please see man i3blocks for a complete reference!
+# The man page is also hosted at http://vivien.github.io/i3blocks
+#
+# List of valid properties:
+#
+# align
+# color
+# command
+# full_text
+# instance
+# interval
+# label
+# min_width
+# name
+# separator
+# separator_block_width
+# short_text
+# signal
+# urgent
+
+# Global properties
+#
+# The top properties below are applied to every block, but can be overridden.
+# Each block command defaults to the script name to avoid boilerplate.
+# Change $SCRIPT_DIR to the location of your scripts!
+command=~/git/i3-configs/scripts/$BLOCK_NAME
+separator_block_width=15
+markup=none
+
+#Custom separator
+#[separator]
+#full_text=| 
+#align=center
+#color=#666666
+#separator=false
+#separator_block_width=10
+
+# Spotify icon \uF1BC
+[spotify]
+label=
+command=python3 ~/git/i3-configs/scripts/spotify.py
+color=#81b71a
+interval=5
+
+#Volume
+[volume]
+label=
+interval=once
+signal=10
+color=#00aeff
+#STEP=5%
+
+
+#plex
+[plex]
+command=python3 ~/git/i3-configs/scripts/plex-streamcount.py
+interval=10
+color=#00aeff
+
+# Date Time
+[time]
+command=date '+%I:%M %m-%d-%Y %p'
+interval=5
+color=#00aeff
+label=
+separator=true
