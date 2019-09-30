@@ -90,7 +90,7 @@ color=#00aeff
 # The script may be called with a optional argument to set the alert
 # (defaults to 10 for 10%).
 [disk]
-label=  
+label=
 interval=30
 color=#00aeff
 
