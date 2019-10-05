@@ -52,6 +52,11 @@ markup=none
 #color=#00aeff
 #label=
 
+[weather]
+command=python3 ~/git/i3-configs/scripts/weather.py
+interval=300
+color=#00aeff
+
 [time]
 command=python3 ~/git/i3-configs/scripts/time.py
 interval=5
