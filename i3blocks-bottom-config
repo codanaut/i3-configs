@@ -60,9 +60,15 @@ interval=10
 color=#00aeff
 
 # Date Time
+#
+#[time]
+#command=date '+%I:%M %m-%d-%Y %p'
+#interval=5
+#color=#00aeff
+#label=
+
 [time]
-command=date '+%I:%M %m-%d-%Y %p'
+command=python3 ~/git/i3-configs/scripts/time.py
 interval=5
 color=#00aeff
 label=
-separator=true
