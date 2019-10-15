@@ -64,11 +64,11 @@ color=#00aeff
 label=
 
 #Volume
-[volume]
-label=
-interval=once
-signal=10
-color=#00aeff
+#[volume]
+#label=
+#interval=once
+#signal=10
+#color=#00aeff
 #STEP=5%
 
 # CPU usage
