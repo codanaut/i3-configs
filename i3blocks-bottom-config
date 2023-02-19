@@ -37,10 +37,17 @@ markup=none
 #separator=false
 #separator_block_width=10
 
+
+[terminal]
+full_text= 
+command=i3-msg -q exec konsole
+
 [files]
 full_text= 
-color=#7f3fbf
-command=i3-msg -q exec dolphin
+color=#00aeff
+#command=i3-msg -q exec dolphin, workspace ""
+Button=?
+command=exec ~/Git/Gitlab/i3-configs/test.sh $button
 
 [browser]
 full_text= 
