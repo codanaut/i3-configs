@@ -25,7 +25,7 @@
 # The top properties below are applied to every block, but can be overridden.
 # Each block command defaults to the script name to avoid boilerplate.
 # Change $SCRIPT_DIR to the location of your scripts!
-command=~/git/i3-configs/scripts/$BLOCK_NAME
+command=~/Git/Gitlab/i3-configs/scripts/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
@@ -53,23 +53,16 @@ markup=none
 #label=
 
 [weather]
-command=python3 ~/git/i3-configs/scripts/weather.py
+command=python3 ~/Git/Gitlab/i3-configs/scripts/weather.py
 interval=300
 color=#00aeff
 
 [time]
-command=python3 ~/git/i3-configs/scripts/time.py
+command=python3 ~/Git/Gitlab/i3-configs/scripts/time.py
 interval=5
 color=#00aeff
-label=
+label= 
 
-#Volume
-#[volume]
-#label=
-#interval=once
-#signal=10
-#color=#00aeff
-#STEP=5%
 
 # CPU usage
 [cpu_usage]
@@ -83,17 +76,11 @@ label=
 #
 # The type defaults to "mem" if the instance is not specified.
 [memory]
-label=
+label= 
 separator=true
 interval=30
 color=#00aeff
 
-
-#[memory]
-#label=SWAP
-#instance=swap
-#separator=true
-#interval=30
 
 # Disk usage
 #
@@ -121,10 +108,3 @@ interval=10
 interval=5
 color=#00aeff
 min_width=100%
-
-
-#plex
-#[plex]
-#command=python3 ~/git/i3-configs/scripts/plex-streamcount.py
-#interval=10
-#color=#00aeff
