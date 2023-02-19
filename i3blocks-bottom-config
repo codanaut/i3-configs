@@ -37,6 +37,21 @@ markup=none
 #separator=false
 #separator_block_width=10
 
+[files]
+full_text= 
+color=#7f3fbf
+command=i3-msg -q exec dolphin
+
+[browser]
+full_text= 
+color=#ff7f81
+command=i3-msg -q exec firefox
+
+[pavucontrol]
+full_text=
+command=pavucontrol
+
+
 # Spotify icon \uF1BC
 [spotify]
 label= 
@@ -66,3 +81,5 @@ command=python3 ~/Git/Gitlab/i3-configs/scripts/time.py
 interval=5
 color=#00aeff
 label= 
+
+
