@@ -28,6 +28,7 @@
 command=~/Git/Gitlab/i3-configs/scripts/$BLOCK_NAME
 separator_block_width=15
 markup=none
+color=#00aeff
 
 #Custom separator
 #[separator]
@@ -55,22 +56,14 @@ markup=none
 [weather]
 command=python3 ~/Git/Gitlab/i3-configs/scripts/weather.py
 interval=300
-color=#00aeff
+#color=#00aeff
 
 [time]
 command=python3 ~/Git/Gitlab/i3-configs/scripts/time.py
 interval=5
-color=#00aeff
+#color=#00aeff
 label= 
 
-
-# CPU usage
-[cpu_usage]
-interval=5
-min_width=100%
-#separator=false
-color=#00aeff
-label=
 
 # Memory usage
 #
@@ -79,7 +72,7 @@ label=
 label= 
 separator=true
 interval=30
-color=#00aeff
+#color=#00aeff
 
 
 # Disk usage
@@ -88,9 +81,9 @@ color=#00aeff
 # The script may be called with a optional argument to set the alert
 # (defaults to 10 for 10%).
 [disk]
-label=
+label= 
 interval=30
-color=#00aeff
+#color=#00aeff
 
 
 # Network interface monitoring
@@ -98,13 +91,13 @@ color=#00aeff
 # If the instance is not specified, use the interface used for default route.
 # The address can be forced to IPv4 or IPv6 with -4 or -6 switches.
 [iface]
-label=
-color=#00aeff
+label= 
+#color=#00aeff
 interval=10
 
 
 [bandwidth]
 #INTERFACE=eth0
 interval=5
-color=#00aeff
+#color=#00aeff
 min_width=100%
