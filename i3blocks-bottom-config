@@ -57,13 +57,13 @@ command=exec ~/Git/Gitlab/i3-configs/workspaceSwitcher.sh $name $button
 [browser]
 full_text= 
 color=#ff7f81
-command=i3-msg -q exec firefox
+#command=i3-msg -q exec firefox
+command=exec ~/Git/Gitlab/i3-configs/workspaceSwitcher.sh $name $button
 
-
-[pavucontrol]
-full_text=  
-command=pavucontrol
-
+[discord]
+full_text= 
+color=#6A5ACD
+command=exec ~/Git/Gitlab/i3-configs/workspaceSwitcher.sh $name $button
 
 # Spotify icon \uF1BC
 [spotify]
@@ -80,6 +80,9 @@ signal=10
 color=#ffffff 
 #STEP=5%
 
+[pavucontrol]
+full_text=  
+command=pavucontrol
 
 # Date Time
 #
