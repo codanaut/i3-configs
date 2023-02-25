@@ -84,13 +84,6 @@ color=#ffffff
 full_text=  
 command=pavucontrol
 
-# Date Time
-#
-#[time]
-#command=date '+%I:%M %m-%d-%Y %p'
-#interval=5
-#color=#00aeff
-#label=
 
 [time]
 command=python3 ~/Git/Gitlab/i3-configs/scripts/time.py

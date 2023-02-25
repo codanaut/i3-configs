@@ -38,20 +38,6 @@ color=#00aeff
 #separator=false
 #separator_block_width=10
 
-# Spotify icon \uF1BC
-#[spotify]
-#label=
-#command=python3 ~/git/i3-configs/scripts/spotify.py
-#color=#81b71a
-#interval=5
-
-# Date Time
-#
-#[time]
-#command=date '+%I:%M %m-%d-%Y %p'
-#interval=5
-#color=#00aeff
-#label=
 
 [weather]
 command=python3 ~/Git/Gitlab/i3-configs/scripts/weather.py
