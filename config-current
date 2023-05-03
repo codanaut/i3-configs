@@ -219,7 +219,7 @@ for_window [class="Discord"] move to workspace $ws7
 #for_window [class="Pavucontrol"] move to workspace $ws9
 
 # create custom workspace for apps
-set $wsDolphin ""
+set $wsDolphin ""
 #assign [class="dolphin"] $wsDolphin
 #for_window [class="dolphin"] focus
 
@@ -265,20 +265,20 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 
 #Top Bar
-bar {
-	position top
-	separator_symbol "|"
-	font pango:DejaVu Sans Mono
-	status_command i3blocks -c ~/Git/Gitlab/i3-configs/i3blocks-top-config
-	workspace_buttons no
-}
+#bar {
+#	position top
+#	separator_symbol "|"
+#	font pango:DejaVu Sans Mono
+#	status_command i3blocks -c ~/Git/Gitlab/i3-configs/i3blocks-top-config
+#	workspace_buttons no
+#}
 
 #Main Bottom Bar
-bar {
-        position bottom
-	font pango:DejaVu Sans Mono, FontAwesome, Font Awesome 6 Brands
-	status_command i3blocks -c ~/Git/Gitlab/i3-configs/i3blocks-bottom-config
-}
+#bar {
+#        position bottom
+#	font pango:DejaVu Sans Mono, FontAwesome, Font Awesome 6 Brands
+#	status_command i3blocks -c ~/Git/Gitlab/i3-configs/i3blocks-bottom-config
+#}
 
 
 #I3-GAPS STUFF
@@ -302,6 +302,9 @@ gaps outer 12
 exec --no-startup-id ~/Git/Gitlab/i3-configs/configmonitors.sh
 
 exec --no-startup-id python3 /home/codanaut/Git/Gitlab/linux-stuff/tools/setbackground.py
+
+# Notifications
+exec --no-startup-id dunst
 
 # num lock activated
 exec_always --no-startup-id numlockx on
