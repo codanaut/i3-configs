@@ -117,7 +117,7 @@ set $ws2 "2:"
 set $ws3 "3:"
 set $ws4 "4:"
 set $ws5 "5:"
-set $ws6 "6"
+set $ws6 "6:"
 set $ws7 "7:"
 set $ws8 "8:"
 set $ws9 "9:"
@@ -293,6 +293,8 @@ new_float pixel 1
 gaps inner 10
 gaps outer 12
 
+gaps top 35
+gaps bottom 35
 
 #
 # Startup 
@@ -310,6 +312,7 @@ exec --no-startup-id dunst
 exec_always --no-startup-id numlockx on
 
 # tranparent
+bindsym $mod+t exec bash picom-trans -t -c
 exec_always --no-startup-id picom --config ~/Git/Gitlab/i3-configs/picom.config
 #exec_always --no-startup-id picom
 
