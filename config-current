@@ -113,7 +113,7 @@ bindsym $mod+a focus parent
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1:"
-set $ws2 "2:"
+set $ws2 "2:"
 set $ws3 "3:"
 set $ws4 "4:"
 set $ws5 "5:"
@@ -225,7 +225,13 @@ set $wsDolphin ""
 
 set $wsSteam ""
 assign [class="Steam"] $wsSteam
+workspace $wsSteam output HDMI-2
 
+set $wsGame ""
+assign [class="team_app_1343400"] $wsGame
+workspace $wsGame output HDMI-2
+bindsym $mod+g workspace $wsGame
+bindsym $mod+Shift+g move container to workspace $wsGame
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
