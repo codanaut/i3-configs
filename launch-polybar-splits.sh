@@ -1,34 +1,37 @@
 #!/bin/bash
 
+# Define the file path variable
+polybar_config=~/Git/Gitlab/i3-configs/polybar-splits.ini
+
 # Terminate already running bar instances
 killall -q polybar
 
 # Middle Screen 
-polybar -r --config=~/Git/Gitlab/i3-configs/polybar-test.ini top-left &
-polybar -r --config=~/Git/Gitlab/i3-configs/polybar-test.ini top-middle &
-polybar -r --config=~/Git/Gitlab/i3-configs/polybar-test.ini top-right &
+polybar -r --config="$polybar_config" top-left &
+polybar -r --config="$polybar_config" top-middle &
+polybar -r --config="$polybar_config" top-right &
 
 # Middle Bottom
-polybar -r --config=~/Git/Gitlab/i3-configs/polybar-test.ini bottom-left &
-polybar -r --config=~/Git/Gitlab/i3-configs/polybar-test.ini bottom-middle &
-polybar -r --config=~/Git/Gitlab/i3-configs/polybar-test.ini bottom-right &
+polybar -r --config="$polybar_config" bottom-left &
+polybar -r --config="$polybar_config" bottom-middle &
+polybar -r --config="$polybar_config" bottom-right &
 
 # Left Screen
-polybar -r --config=~/Git/Gitlab/i3-configs/polybar-test.ini left-top-left &
-polybar -r --config=~/Git/Gitlab/i3-configs/polybar-test.ini left-top-middle &
-polybar -r --config=~/Git/Gitlab/i3-configs/polybar-test.ini left-top-right &
+polybar -r --config="$polybar_config" left-top-left &
+polybar -r --config="$polybar_config" left-top-middle &
+polybar -r --config="$polybar_config" left-top-right &
 
 # Left Bottom
-polybar -r --config=~/Git/Gitlab/i3-configs/polybar-test.ini left-bottom-left &
-polybar -r --config=~/Git/Gitlab/i3-configs/polybar-test.ini left-bottom-middle &
-polybar -r --config=~/Git/Gitlab/i3-configs/polybar-test.ini left-bottom-right &
+polybar -r --config="$polybar_config" left-bottom-left &
+polybar -r --config="$polybar_config" left-bottom-middle &
+polybar -r --config="$polybar_config" left-bottom-right &
 
 # Right Screen
-polybar -r --config=~/Git/Gitlab/i3-configs/polybar-test.ini right-top-left &
-polybar -r --config=~/Git/Gitlab/i3-configs/polybar-test.ini right-top-middle &
-polybar -r --config=~/Git/Gitlab/i3-configs/polybar-test.ini right-top-right &
+polybar -r --config="$polybar_config" right-top-left &
+polybar -r --config="$polybar_config" right-top-middle &
+polybar -r --config="$polybar_config" right-top-right &
 
 # Right Bottom
-polybar -r --config=~/Git/Gitlab/i3-configs/polybar-test.ini right-bottom-left &
-polybar -r --config=~/Git/Gitlab/i3-configs/polybar-test.ini right-bottom-middle &
-polybar -r --config=~/Git/Gitlab/i3-configs/polybar-test.ini right-bottom-right &
+polybar -r --config="$polybar_config" right-bottom-left &
+polybar -r --config="$polybar_config" right-bottom-middle &
+polybar -r --config="$polybar_config" right-bottom-right &
