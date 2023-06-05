@@ -319,7 +319,8 @@ exec_always --no-startup-id numlockx on
 
 # tranparent
 bindsym $mod+t exec bash picom-trans -t -c
-exec_always --no-startup-id picom --config ~/Git/Gitlab/i3-configs/picom.config
+#exec_always --no-startup-id picom --config ~/Git/Gitlab/i3-configs/picom.config
+exec --no-startup-id picom --config ~/Git/Gitlab/i3-configs/picom.config
 #exec_always --no-startup-id picom
 
 
